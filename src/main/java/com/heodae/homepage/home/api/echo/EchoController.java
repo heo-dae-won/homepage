@@ -15,7 +15,6 @@ import java.net.http.HttpResponse;
 @RequestMapping("/echo")
 public class EchoController {
 
-
     @GetMapping("/{str}")
     public ResponseEntity<String> getEcho(@PathVariable String str){
         HttpHeaders headers = new HttpHeaders();
